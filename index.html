@@ -9,117 +9,146 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="./media/logo.png">
     <title>Portfolio-Aman</title>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="./tailwind.js"></script>
 </head>
 
 <body class="bg-zinc-900">
-    <nav class="px-5 py-1 flex justify-between bg-[#0f0020]">
-        <div class=" flex">
+    <div class="line"></div>
+    <nav class="px-5 z-40 relative py-4 flex justify-between bg-[#0f0020]">
+        <div class=" flex items-center">
             <p class=" text-3xl font-semibold font-mono text-[#cf19ff]">&lt;</p>
-            <img class="w-44" src="./media/logo.png" alt="">
+            <p class="text-xl text-[#01ef9b] font-mono">exploring-solver</p>
             <p class="text-3xl font-semibold font-mono text-[#cf19ff]">/&gt;</p>
         </div>
-        <ul class="flex navbar-left">
+        <ul class="flex navbar-left ">
             <a href="">
-                <li class="text-xl mx-3 font-bold text-[#01ef9b] hover:cursor-pointer">Start <span
-                        class="font-semibold">/></span></li>
+                <li class="text-xl mx-3  text-[#01ef9b] ">Start <span class="font-semibold">/></span></li>
             </a>
             <a href="">
-                <li class="text-xl mx-3 font-bold text-[#01ef9b] hover:cursor-pointer">Resume <span
-                        class="font-semibold">/></span></li>
+                <li class="text-xl mx-3  text-[#01ef9b] ">Resume <span class="font-semibold">/></span></li>
             </a>
             <a href="#work">
-                <li class="text-xl mx-3 font-bold text-[#01ef9b] hover:cursor-pointer">Work <span
+                <li class="text-xl mx-3  text-[#01ef9b] " onclick="scrollToSection('work')">Work <span
                         class="font-semibold">/></span></li>
             </a>
-            <a href="#about">
-                <li class="text-xl mx-3 font-bold text-[#01ef9b] hover:cursor-pointer">About <span
+            <a href="#aboutd ">
+                <li class="text-xl mx-3  text-[#01ef9b] " onclick="scrollToSection('about')">About <span
                         class="font-semibold">/></span></li>
             </a>
-            <a href="#contact">
-                <li class="text-xl mx-3 font-bold text-[#01ef9b] hover:cursor-pointer">Contact <span
+            <a href="#contactw" onclick="scrollToSection('contact')">
+                <li class="text-xl mx-3  text-[#01ef9b] " onclick="scrollToSection('contact')">Contact <span
                         class="font-semibold">/></span></li>
             </a>
         </ul>
     </nav>
-    <div class="px-[10%] top-intro bg-custom-bg bg-cover bg-center h-[600px] flex items-center">
-        <div class=" flex flex-col">
-            <p class="text-3xl font-semibold text-zinc-400">Start/></p>
-            <p class="text-3xl font-bold text-[#01ef9b]">Hi you can call me <span class="text-[#cf19ff]"
-                    id="sequence1">Aman
-                    Sharma</span><span id="cursor" class="blink-cursor">|</span>
-            </p>
-            <p class="text-3xl font-bold text-[#01ef9b]">I develop and design <span class="text-[#cf19ff]"
-                    id="sequence2">websites</span><span id="cursor" class="blink-cursor">|</span></p>
-            <br>
-            <p class="text-xl font-semibold text-zinc-400">Let me show you..</p>
-        </div>
+    <div class="px-[10%] top-intro relative h-[600px] flex items-center">
+        <img id="blur-image" src="./media/top-intro.png" alt="Image"
+            class="absolute inset-0 w-full h-full object-cover object-center z-0 ">
+        <div class="absolute inset-0 flex flex-col  justify-center z-10 px-[10%] ">
 
+            <div class="left-[9%] w-fit">
+                <div id="infinity" class=" "></div>
+            </div>
+            <p class="text-3xl font-semibold text-zinc-400">Start/></p>
+            <p class="text-3xl  text-[#01ef9b]">Hi you can call me <span class="text-[#cf19ff]" id="app">Aman
+                    Sharma</span><span id="cursor" class="blink-cursor"></span></p>
+            <div id="app" class="text-3xl  text-[#01ef9b]"></div>
+            <p class="text-3xl  text-[#01ef9b]">I develop and design <span class="text-[#cf19ff]"
+                    id="app1"></span><span id="cursor" class="blink-cursor"></span></p>
+            <br>
+            <p class="text-xl font-semibold text-green-500 bg-black p-2 w-fit rounded">Let me show you my work.. <span
+                    class="text-black " id="app2"></span></p>
+        </div>
     </div>
-    <div class="pt-10 mid-work  flex flex-col px-[10%] bg-custom-bg-2 bg-cover bg-center h-full" id="work">
+    <div class="pt-10 mid-work  flex flex-col px-[10%]  h-full bg-black" id="work">
         <div class="header-work flex flex-col  pb-10">
             <p class=" text-3xl font-semibold text-zinc-400"> Work/></p>
             <br>
-            <p class="text-2xl font-bold text-[#01ef9b]"> These are some of my projects in <span class="text-[#cf19ff]"
-                    id="sequence3">MERN stack</span><span id="cursor" class="blink-cursor">|</span></p>
+            <p class="text-2xl text-[#01ef9b]"> These are some of my projects in <span class="text-[#cf19ff]"
+                    id="app3"></span><span id="cursor" class="blink-cursor">|</span></p>
         </div>
         <div class="flex justify-between">
             <div class="flex">
                 <img src="./media/terminal-logo.png" class="w-6" alt="">
-                <p class="text-2xl font-semibold text-zinc-400">Exploring-solver terminal</p>
+                <p class="text-2xl text-zinc-400">Exploring-solver terminal</p>
 
             </div>
-            <p class="text-2xl font-semibold text-zinc-400">C:\Users\exploring-solver></p>
+            <p class="text-2xl  text-zinc-400">C:\Users\exploring-solver></p>
         </div>
         <br>
-        <div>
-            <p class="text-2xl font-semibold text-zinc-400">\MERN></p>
-            <div class="flex flex-wrap gap-5 justify-between px-10 py-6">
-                <div href="https://spectacular-vacherin-298330.netlify.app/"
-                    class="image-container hover:cursor-pointer">
-                    <img class="w-[600px] hover:w-[605px]" src="./media/tourney_nation_image_1.png" alt="">
-                    <div class="text-overlay">
-                        <a class="hover:text-teal-400" href="https://spectacular-vacherin-298330.netlify.app/">
-                            <p>Landing Page</p>
-                        </a>
-                    </div>
+        <div class="flex flex-wrap w-fit md:w-[70%]">
+
+            <div>
+                <p class="text-2xl text-zinc-400">\ReactJs and Django></p>
+                <div class="flex flex-wrap gap-5 justify-between px-10 py-6 grow">
+                    <a href="https://erp.mait.ac.in/">
+                        <div class="image-container border-[1px] p-2 rounded flex flex-col justify-center items-center">
+                            <br><br>
+                            <div class="flex gap-5 flex-wrap justify-center items-center">
+                                <img class="w-[300px]  " src="./media/erp.png" alt="">
+                            </div>
+                            <br>
+                            <br>
+                            <p class="text-white font-mono ">ERP(Enterprise Resource Planning) project developed for college and universities developed to efficiently manage and streamline processes like student admission, employee recruitment, fees payment, counsellor management, placement module, etc. The project has functionalities like JWT authentication, BillDesk Payment Gateway integration, multi-role based dashboards and an interactive admin panel</p>
+                        </div>
+                    </a>
                 </div>
-                <div href="https://spectacular-vacherin-298330.netlify.app/"
-                    class="image-container hover:cursor-pointer">
-                    <img class="w-[600px]" src="./media/tourney_nation_image_2.png" alt="">
-                    <div class="text-overlay">
-                        <a class="hover:text-teal-400" href="https://spectacular-vacherin-298330.netlify.app/">
-                            <p>Tournaments Page</p>
-                        </a>
-                    </div>
+                <div class="flex flex-wrap gap-5 justify-between px-10 py-6 grow">
+                    <a href="">
+                        <div class="image-container border-[1px] p-2 rounded flex flex-col justify-center items-center">
+                            <br><br>
+                            <div class="flex gap-5 flex-wrap justify-center items-center">
+                                <img class="w-[300px]  " src="./media/tourney_nation_image_1.png" alt="">
+                            </div>
+                            <br>
+                            <br>
+                            <p class="text-white font-mono ">Post Gradute Dissertation Management System(PGDMS) . A project as the name suggests to manage and streamline the publishing of research papers and dissertations for medical professionals with multi user based login for universities, guides and Researchers.Features include plagarism check, request panel for feedback, publisher management, approvak management.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div>
-            <p class="text-2xl font-semibold text-zinc-400">\TailwindCSS></p>
-            <div class="flex flex-wrap gap-5 justify-between px-10 py-6">
-
-                <div class="image-container">
-                    <img class="w-[600px]" src="./media/electrInfo_image.png" alt="">
-                    <div class="text-overlay">
-                        <a class="hover:text-teal-400" href="https://exploring-solver.github.io/LanfInfo_tailwind/">
-                            <p>ElectrInfo</p>
-                        </a>
-                    </div>
+            <div>
+                <p class="text-2xl text-zinc-400">\MERN></p>
+                <div class="flex flex-wrap gap-5 justify-between px-10 py-6 grow">
+                    <a href="https://spectacular-vacherin-298330.netlify.app/">
+                        <div class="image-container border-[1px] p-2 rounded flex flex-col justify-center items-center">
+                            <br><br>
+                            <div class="flex gap-5 flex-wrap justify-center items-center">
+                                <img class="w-[300px]  " src="./media/tourney_nation_image_1.png" alt="">
+                                <img class="w-[300px]" src="./media/tourney_nation_image_2.png" alt="">
+                            </div>
+                            <br>
+                            <br>
+                            <p class="text-white font-mono ">Tourney Nation- a website to create/host/join gaming
+                                tournaments, communities and events using MongoDb, ReactJs, NodeJs and ExrpressJs.
+                                Features include JWT authentication, role based routing and access, RestFul API for
+                                Tournaments.</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="image-container">
-                    <img class="w-[600px]" src="./media/landInfo_image.png" alt="">
-                    <div class="text-overlay">
-                        <a class="hover:text-teal-400"
-                            href="https://exploring-solver.github.io/Electrinfo_tailwind/index.html">
-                            <p>LandInfo</p>
-                        </a>
+            </div>
+            <div>
+                <p class="text-2xl text-zinc-400">\TailwindCSS></p>
+                <div class="flex flex-wrap gap-5 justify-between px-10 py-6 grow">
+                    <div class="image-container border-[1px] p-2 rounded flex flex-col justify-center items-center">
+                        <br><br>
+                        <div class="flex gap-5 flex-wrap justify-center items-center">
+                            <img class="w-[300px]  " src="./media/electrInfo_image.png" alt="">
+                            <img class="w-[300px]" src="./media/landInfo_image.png" alt="">
+                        </div>
+                        <br>
+                        <br>
+                        <p class="text-white font-mono ">These are HTML and TailwindCSS projects fully responsive, made as part of a
+                            college mini project made by me to provide information on land sustainable alternatives and electricity
+                            saving.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <br>
-    <div class="about-mid-low font-mono px-[10%]" id="about">
+    <div class="about-mid-low font-mono px-[10%] -40" id="about">
         <p class=" text-3xl font-semibold text-zinc-400"> About/></p>
         <div class="flex text-xl flex-col pt-10">
             <p class=" text-violet-900">
@@ -179,7 +208,7 @@
                 <span class="text-zinc-900">....</span>return <span class="text-white">[</span>
             </p>
             <p class="text-green-500">
-                <span class="text-zinc-900">......</span><span class="text-white">{</span> '2022-now'<span
+                <span class="text-zinc-900">......</span><span class="text-white">{</span> '2022-2026'<span
                     class="text-white">:</span> 'Maharaja Agrasen Institute Of Technology - Bachelor of Technology -
                 Computer Science' <span class="text-white">}</span>
             </p>
@@ -211,75 +240,140 @@
             </p>
         </div>
         <br>
-        <div class="bottom-contact font-sans" id="contact">
-            <p class=" text-3xl font-semibold text-zinc-400"> Contact/></p>
-            <div class="get-in-touch-box pt-10">
-                <p class="text-white font-semibold text-3xl">Get In Touch</p>
-                <br>
-                <div class="flex flex-wrap flex-col justify-between ml-10 w-[400px]">
-                    <a href="https://www.linkedin.com/in/aman-sharma-a37072263">
-                        <p class="text-[#cf19ff] text-xl"><i class="fab fa-linkedin"></i>
-                            Aman Sharma</p>
-                    </a>
-                    <a href="https://github.com/exploring-solver">
-                        <p class="text-[#cf19ff] text-xl"><i class="fab fa-github"></i>exploring-solver</p>
-                    </a>
-                    <a
-                        href="mailto:amansharma12607@gmail.com?subject=Connecting&body=Hello%20there I wanted to connect,">
-                        <p class="text-[#cf19ff] text-xl"><i class="far fa-envelope"></i>Mail me</p>
-                    </a>
-                </div>
+    </div>
+
+    <div class="bottom-contact font-sans px-[10%] z-40" id="contact">
+        <p class=" text-3xl font-semibold text-zinc-400"> Contact/></p>
+        <div class="get-in-touch-box pt-10">
+            <p class="text-white font-semibold text-3xl">Get In Touch</p>
+            <br>
+            <div class="flex flex-wrap flex-col justify-between ml-10 w-[400px]">
+                <a href="https://www.linkedin.com/in/aman-sharma-a37072263">
+                    <p class="text-[#cf19ff] text-xl"><i class="fab fa-linkedin"></i>
+                        Aman Sharma</p>
+                </a>
+                <a href="https://github.com/exploring-solver">
+                    <p class="text-[#cf19ff] text-xl"><i class="fab fa-github"></i>exploring-solver</p>
+                </a>
+                <a href="mailto:amansharma12607@gmail.com?subject=Connecting&body=Hello%20there I wanted to connect,">
+                    <p class="text-[#cf19ff] text-xl"><i class="far fa-envelope"></i>Mail me</p>
+                </a>
             </div>
         </div>
-        <br><br><br>
-        <p class="text-zinc-400 ">&copy; Made by exploring-solver.</p>
+    </div>
+    <br><br><br>
+    <p class="text-zinc-400 px-[10%]">&copy; Made by exploring-solver.</p>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
 </body>
 <script>
-    var example1 = ['Aman Sharma', 'exploring-solver', 'maniac_codes'];
-    var example2 = ['Web Apps', 'backend', 'frontend', 'solutions'];
-    var example3 = ['MERN', 'TailwindCSS'];
-
-    textSequence1(0);
-    textSequence2(0);
-    textSequence3(0);
-    function textSequence1(i) {
-
-        if (example1.length > i) {
-            setTimeout(function () {
-                document.getElementById("sequence1").innerHTML = example1[i];
-                textSequence1(++i);
-            }, 1300); // 1 second (in milliseconds)
-
-        } else if (example1.length == i) { // Loop
-            textSequence1(0);
-        }
-    }
-    function textSequence2(i) {
-
-        if (example2.length > i) {
-            setTimeout(function () {
-                document.getElementById("sequence2").innerHTML = example2[i];
-                textSequence2(++i);
-            }, 1600); // 1 second (in milliseconds)
-
-        } else if (example2.length == i) { // Loop
-            textSequence2(0);
-        }
-
-    }
-    function textSequence3(i) {
-
-        if (example3.length > i) {
-            setTimeout(function () {
-                document.getElementById("sequence3").innerHTML = example3[i];
-                textSequence3(++i);
-            }, 1900); // 1 second (in milliseconds)
-
-        } else if (example3.length == i) { // Loop
-            textSequence3(0);
-        }
-    }
+    window.addEventListener('scroll', function () {
+        var image = document.getElementById('blur-image');
+        var scrollPosition = window.scrollY;
+        var blurAmount = Math.min(scrollPosition / 30, 5); // Adjust the divisor for the blur effect intensity
+        image.style.filter = 'blur(' + blurAmount + 'px)';
+    });
     // Smooth scrolling function
+    var app = document.getElementById('app');
+
+    var typewriter = new Typewriter(app, {
+        loop: true,
+    });
+
+    typewriter.typeString('Aman Sharma')
+        .pauseFor(1000)
+        .deleteAll()
+        .typeString('exploring-solver')
+        .pauseFor(1000)
+        .deleteAll()
+        .typeString('maniac_codes')
+        .pauseFor(1000)
+        .start();
+    function smoothScrollTo(element) {
+        window.scroll({
+            behavior: 'smooth',
+            left: 0,
+            top: element.offsetTop
+        });
+    }
+    var app2 = document.getElementById('app2');
+
+    var typewriter = new Typewriter(app2, {
+        loop: true,
+    });
+
+    typewriter.typeString('#$^%&^*&YUGJFHR')
+        .pauseFor(1000)
+        .deleteAll()
+        .typeString(' $#%$^R%&T*^YJUNIYT')
+        .pauseFor(1000)
+        .start();
+    function smoothScrollTo(element) {
+        window.scroll({
+            behavior: 'smooth',
+            left: 0,
+            top: element.offsetTop
+        });
+    }
+    var app3 = document.getElementById('app3');
+
+    var typewriter = new Typewriter(app3, {
+        loop: true,
+        cursorClassName: "hidden"
+    });
+
+    typewriter.typeString('MERN stack')
+        .pauseFor(500)
+        .deleteAll()
+        .typeString('Unity AR Apps')
+        .pauseFor(500)
+        .deleteChars(7)
+        .typeString('Metaverses')
+        .pauseFor(500)
+        .deleteAll()
+        .typeString('Python')
+        .pauseFor(500)
+        .deleteAll()
+        .typeString('Django')
+        .pauseFor(500)
+        .deleteAll()
+        .typeString('OpenCV and Tensorflow')
+        .pauseFor(500)
+        .deleteAll()
+        .typeString('React Native')
+        .pauseFor(500)
+        .start();
+    function smoothScrollTo(element) {
+        window.scroll({
+            behavior: 'smooth',
+            left: 0,
+            top: element.offsetTop
+        });
+    }
+    var app = document.getElementById('app1');
+
+    var typewriter = new Typewriter(app, {
+        loop: true
+    });
+
+    typewriter.typeString('Web Apps')
+        .pauseFor(500)
+        .deleteAll()
+        .typeString('Backend')
+        .pauseFor(500)
+        .deleteAll()
+        .typeString('Frontend')
+        .pauseFor(500)
+        .deleteAll()
+        .typeString('AR/VR games')
+        .pauseFor(500)
+        .deleteAll()
+        .typeString('3D websites')
+        .pauseFor(500)
+        .deleteAll()
+        .typeString('Solutions')
+        .pauseFor(500)
+        .start();
     function smoothScrollTo(element) {
         window.scroll({
             behavior: 'smooth',
@@ -296,6 +390,51 @@
             smoothScrollTo(target);
         }
     });
+
+    // UPDATE: I was able to get this working again... Enjoy!
+
+    var cursor = document.querySelector('.cursor');
+    var cursorinner = document.querySelector('.cursor2');
+    var a = document.querySelectorAll('a');
+
+    document.addEventListener('mousemove', function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+    });
+
+    document.addEventListener('mousemove', function (e) {
+        var x = e.clientX;
+        var y = e.clientY;
+        cursorinner.style.left = x + 'px';
+        cursorinner.style.top = y + 'px';
+    });
+
+    document.addEventListener('mousedown', function () {
+        cursor.classList.add('click');
+        cursorinner.classList.add('cursorinnerhover')
+    });
+
+    document.addEventListener('mouseup', function () {
+        cursor.classList.remove('click')
+        cursorinner.classList.remove('cursorinnerhover')
+    });
+
+    a.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            cursor.classList.add('hover');
+        });
+        item.addEventListener('mouseleave', () => {
+            cursor.classList.remove('hover');
+        });
+    })
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
 </script>
 
 </html>
