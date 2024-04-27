@@ -137,7 +137,6 @@ a:hover:after {
   border-radius: 100%;
   background-color: rgb(250, 255, 249);
   opacity: .9;
-
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
@@ -146,7 +145,7 @@ a:hover:after {
 
 .hover {
   background-color: rgb(68, 76, 56);
-  opacity: 0.5;
+  transition: width .3s, height .3s, opacity .3s;
 }
 
 .cursorinnerhover {
