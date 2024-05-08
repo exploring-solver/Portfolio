@@ -136,7 +136,7 @@ a:hover:after {
   height: 5px;
   border-radius: 100%;
   background-color: rgb(250, 255, 249);
-  opacity: .9;
+  opacity: . 9;
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
